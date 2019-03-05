@@ -1,0 +1,87 @@
+body {
+  margin: 40px;
+}
+
+  .wrapper {
+    display: grid;
+    grid-gap: 1em;
+    grid-template-rows: repeat(2, auto);
+    grid-template-columns: repeat(2, auto);
+    grid-template-areas:
+     "header   header"
+    "sidebar  content";
+  }
+
+  .box {
+  color: #fff;
+  border-radius: 5px;
+  padding: 10px;
+  font-size: 150%; 
+  /*background-color: black;*/
+}
+
+    .sidebar {
+        grid-area: sidebar;
+        border: red dotted 2px;
+        /*background: transparent;*/
+        background-image: url(https://raw.githubusercontent.com/Jalalhejazi/images/master/chilli/chilli2.jpg);
+background-repeat: no-repeat;
+background-position: center center;
+
+
+
+        color: rgb(233, 17, 17)
+    }
+
+   
+
+    .content {
+        grid-area: content;
+         background: transparent;
+         color: palevioletred;
+         background-image: url(https://raw.githubusercontent.com/Jalalhejazi/images/master/chilli/peppers_bg.jpg);
+background-repeat: no-repeat;
+background-position: center center;
+
+    }
+
+    .header {
+        grid-area: header;
+        background: transparent;
+       
+    }
+
+    
+    .wrapper {
+        background-color: #fff;
+        color: rgb(221, 107, 107);
+    }
+
+.header
+{
+  background-color: #999;
+}
+
+.header ul li {
+  list-style: none ; 
+  display: inline-block;
+  margin-left: 2em;
+  margin-right: 2em;
+}
+
+
+
+.logo
+{
+  height: 55px; 
+  position: relative;
+  top: 2.5em;
+ }
+.titel
+{
+  font-size: 2em;
+  color: red;
+}
+
+
+
